@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+        <div class="form__control">
+            <input class="nome"type="text" id="name" name="name" placeholder="Nome *" required>
+            
+        </div>
+
+        <div class="form__control">
+            <input type="text" id="email" name="email" placeholder="E-mail *" required>
+        </div>
+        <div class="form__control">
+            <input type="password" id="senha" name="senha" placeholder="Sua melhor senha *" required>        
+        </div>
+
+        <div class="form__control--disabled">
+            <input type="password" id="senha" name="senha" placeholder="Sua melhor senha *" disabled>        
+        </div>
+
+        <div class="form__control--inline">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Posso enviar e-mails divertidos de spam para sua caixa? :)</label>
+        </div>
+
+ 
+        <div class="form__control--inline">
+            <input class="input" type="radio" name="spam" id="spam1" checked>
+            <label for="radio">Prefere seus spans de segunda a sexta?</label>
+        </div>
+
+        <div class="form__control--inline">
+            <input class="input" type="radio" name="spam" id="spam2">
+            <label for="radio">Prefere seus spans de segunda, quarta e sexta?</label>
+        </div>
+
+        <div class="form__control--inline">
+            <input class="input" type="radio" name="spam" id="spam3">
+            <label for="radio">Prefere seus spans de terça e quinta?</label>
+        </div>
+
+        <input type="submit" class="form__button" value="Inscreva-se" id="button">
+    
+    </form>    
+</body>
+</html>
+

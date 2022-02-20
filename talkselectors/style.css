@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.column {
+    align-self: stretch;
+    margin: 14px 12px 14px 12px;
+    padding: 48px;
+    border-radius: 16px;
+    background-color: #98D7C2;   
+}
+
+/*seletor por classe/ class selector*/ 
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-color: #E2EAE9;
+}
+
+/* seletor universal/ unversival selector*/
+
+ /* * {
+     border: 1px solid black;
+}   */
+
+/* seletor tag/ type selector*/
+
+p {
+    color: chocolate;
+}
+
+/* seletor "único" / id selector*/
+
+#sub1 { /* Não é muito usado dentro do css, normalmente é apenas pro HTML*/
+    color: purple;
+}
+
+#sub2 {
+    color: blue;
+}
+
+#sub3 {
+    color: red;
+}
+
+/*------------- GRUPO DE SELETORES/GROUPING SELECTORS-------------*/
+
+/*seletor de parentesco*/
+
+.parentesco li { /*Seleciona todos os filhos do elemento parentesco*/
+    color: rgb(107, 60, 107);
+}
+
+/* seletor de listas/ selector list*/ 
+
+h1, p {
+    text-align: center;
+}
+
+/* seletores de descentes*/ 
+
+.list-1 > li { /* seleciona o filho*/
+    color: cornflowerblue;
+}
+
+/* seletores adjacente*/
+
+#adjacente + li { /*seleciona o elemento do lado*/
+    color: darkred;
+}
+
+/* general sibling*/
+
+#descendente ~ .descendente { /*seleciona os próximos descendentes*/
+    color: forestgreen; 
+}
+
+[atributo] {
+    color: fuchsia; /*seletor de atributo*/
+}
+

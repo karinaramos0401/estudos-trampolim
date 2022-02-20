@@ -1,0 +1,83 @@
+
+body {
+
+    background-color: lightgrey; /*Propriedades*/
+}
+
+.imagem {
+    
+    vertical-align: middle; /*Sendo um elemento inline, pra remover o espaçamento abaixo utliza essa propriedade*/
+    width: 500px;
+    height: 300px;
+    object-fit: cover; /*respeita a dimensão dada da largura e altura e preenche toda caixa do conteúdo do elemento.*/
+   /* transition: 0.2s;*/
+   /* z-index: 2;*/
+    
+}
+
+/*Contain - Preenche o elemento respeitando as proporções; 
+Fill - Não respeita as proporções e estica o elemento; 
+None - Segue o padrão da imagem e não redimensiona o elemento*/
+
+
+.imagem:hover { 
+
+    opacity: 0.8;
+}
+
+
+.container {
+    margin-top: 40px ;
+    display: flex;
+    justify-content: space-between;
+    transition: 00.2s;  /*transição do hover*/
+   
+}
+
+.container:hover{
+    transform: rotate(-4deg);
+}
+    /*rotaciona a imagem*/
+
+
+
+/* .container:hover{ */
+    /* transform: scale(1.1);  */
+/* } */
+     /*zoom na imagem*/
+
+
+.legenda {
+    background-color: #A49393;
+    color: #000;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+
+.guaxinim {
+
+    border-radius: 10px 10px 0 0;
+
+}
+
+.furao { 
+
+    border-radius: 0 0 10px 10px;
+}
+
+.bloco1 {
+    transform: translate(250px,0px);
+    width: 500px;
+    height: 300px;
+    background-color: lightsalmon;
+    z-index: -1; 
+
+}
+    /*reposiciona o elemento na tela
+ 
+   
+
+

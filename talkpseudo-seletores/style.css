@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;   
+    padding-top: 15px;
+}
+
+.form {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form__button {
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid black;
+    color: black;
+    height: 35px;
+    transition: 300ms;
+    margin-top: 20px;
+}
+
+.form__button:hover {
+    background-color: rgb(164, 164, 226);
+}
+
+.nome:focus {
+    color: purple;
+    outline: none;
+    
+}
+
+.form__control > input {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.form__button:active {
+    color: white;
+}
+
+.form__control {
+    width: 400px;
+}
+
+.form:focus-within {
+    border: 2px solid grey; 
+    
+} 
+
+
+ /* .form__control > input:focus-visible { 
+    border: 2px solid blue;
+    outline: none;
+}  */
+
+.checkbox:checked + label { 
+    color: green;
+
+}
+
+.form__control--inline {
+    display: inline;
+}
+
+.form__control > input:valid {
+    border: 2px solid green;
+}
+
+.form__control > input:invalid {
+    border: 2px solid red;
+}
+ 
+.form__control--disabled {
+    width: 400px;
+    
+}
+
+.form__control--disabled > input:disabled { 
+    width: 100%;
+    cursor: not-allowed;
+}
+
+.input:default {
+    box-shadow: 0 0 2px 1px red;
+}
+
+.input:default + label {
+    color: red;
+}
+
+
